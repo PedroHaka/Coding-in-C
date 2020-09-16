@@ -1,0 +1,57 @@
+/* Bibliotecas */
+#include <stdlib.h>
+#include <conio.h>
+#include <stdio.h>
+#include <math.h>
+
+/* Variáveis */
+char d1, d2, d3, d4, proc;
+
+/* Corpo do programa */
+int main()
+{
+    system("color 4f");
+    printf("  Digite a senha de 4 digitos: ");
+    d1 = getch();
+    printf("*");
+    d2 = getch();
+    printf("*");
+    d3 = getch();
+    printf("*");
+    d4 = getch();
+    printf("*");
+    if(d1=='1' && d2=='3' && d3=='1' && d4=='0')
+        {
+        printf("\n  Selecione uma das tarefas e digite a tecla correspondente:");
+        printf("\n  ---------------------------------------");
+        printf("\n                 a - saldo");
+        printf("\n                b - deposito");
+        printf("\n               c - pagamentos");
+        printf("\n              d - tranferencias");
+        printf("\n                  e - sair");
+        printf("\n  ---------------------------------------\n");
+        fflush(stdin);
+        scanf("%c", &proc);
+        switch ( proc )
+           {
+           case 'a':
+               printf("\n  Operacao: Saldo"); break;
+           case 'b':
+               printf("\n  Operacao: Deposito"); break;
+           case 'c':
+               printf("\n  Operacao: Pagamentos"); break;
+           case 'd':
+               printf("\n  Operacao: Transferencias"); break;
+           case 'e':
+               exit(0); break;
+           default:
+               printf("\n  Opcao invalida");
+           }
+        }
+    if(d1!='1' || d2!='3' || d3!='1' || d4!='0')
+    {
+        printf("\n  Senha Incorreta.");
+    }
+    return (0);
+}
+
