@@ -1,0 +1,26 @@
+/* Bibliotecas */
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+
+/* Variáveis */
+float salariobruto, salarioliquido, ir, prev;
+
+/* Corpo do programa */
+void main()
+{
+system("cls");
+system("color 4d");
+printf("  Este algoritmo recebe o valor em reais do salario bruto de um funcionario, calcula despesas de previdencia e imposto de renda, e retorna estes valores calculados, junto tambem do valor do salario liquido pos despesas.\n");
+printf("  Digite o valor em reais do salario bruto:\n");
+fflush(stdin);
+scanf("%f", &salariobruto);
+prev = salariobruto * 0.085;
+ir = (salariobruto - prev) * 0.275;
+salarioliquido = salariobruto - prev - ir;
+printf("  O valor da previdencia correspondente vale:%f\n", prev);
+printf("  O valor do imposto de renda vale:%f\n", ir);
+printf("  O valor do salario liquido valera entao:%f\n", salarioliquido);
+system("pause");
+
+}
