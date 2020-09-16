@@ -1,0 +1,47 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+
+int faltas;
+float prova, projeto, listas, media;
+
+int main()
+{
+   system("color 4a");
+   printf("  Aprovacao em LG1A1.\n");
+   printf("  Digite o numero de faltas do aluno:  ");
+   fflush(stdin);
+   scanf("%i", &faltas);
+if(faltas>24)
+{
+   printf("\n  O aluno esta retido por faltas.");
+}
+else
+{
+   printf("\n  Digite a nota da prova:  ");
+   fflush(stdin);
+   scanf("%f", &prova);
+   printf("\n  Digite a nota de projeto:  ");
+   fflush(stdin);
+   scanf("%f", &projeto);
+   printf("\n  Digite a nota das listas de exercicios:  ");
+   fflush(stdin);
+   scanf("%f", &listas);
+   media = (prova+projeto+listas)/3;
+   printf("\n  A media final do aluno:%.2f", media);
+   if(media>=6)
+   {
+       printf("\n  O aluno esta aprovado.");
+   }
+   if((media<6)&&(media>=4))
+   {
+       printf("\n  O aluno deve realizar IFA.");
+   }
+   if(media<4)
+   {
+       printf("\n  O aluno esta retido por nota.");
+   }
+}
+getch();
+return (0);
+}
