@@ -1,0 +1,20 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int a;
+
+int main ()
+{
+    system("color 0b");
+    printf("  Calculo do quadrado dos numeros inteiros entre 15 e 200.\n");
+a=14;
+
+while (a<=200)
+
+       {
+           a++;
+           printf("%d\n", a * a);
+       }
+    printf("\n");
+    system ("PAUSE\n");
+}
