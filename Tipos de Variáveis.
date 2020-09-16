@@ -1,0 +1,51 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <stdbool.h>
+
+void main(){
+  /*
+     int = Valores inteiros
+     float = Valores decimais
+     char = Letras (dentro de aspas simples, não duplas)
+     bool = Verdadeiro ou Falso
+  */
+
+
+  /* Definindo variáveis */
+  int a;
+  float b;
+  char c;
+  bool d;
+
+  /* Passando valores de variavel */
+  a = 5;
+  b = 5.5;
+  c = 'c';
+  d = true; /* true = 1, false = 0 */
+
+  /* Escrevendo na tela */
+  printf("\n O valor de a = %d", a);
+  printf("\n O valor de b = %.2f", b);
+  printf("\n O valor de c = %c", c);
+  printf("\n O valor de d = %d\n", d);
+
+  /* Lendo o valor de variavel */
+  scanf("%d", &a);
+  printf("\n");
+  scanf("%f", &b);
+  printf("\n");
+  scanf(" %c", &c); /* (char necessita espaço antes de %c, logo, _%c) */
+  printf("\n");
+  scanf("%d", &d);
+
+
+  /* Imprimindo o novo valor de variavel */
+  printf("\n O novo valor de a = %d", a);
+  printf("\n O novo valor de b = %.2f", b);
+  printf("\n O novo valor de c = %c", c);
+  printf("\n O novo valor de d = %d\n", d);
+
+
+  /* Pausa do sistema */
+  system("pause");
+}
