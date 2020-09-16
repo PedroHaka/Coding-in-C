@@ -1,0 +1,22 @@
+/* Bibliotecas */
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+
+/* Variáveis */
+float numero;
+
+/* Corpo do programa */
+void main()
+{
+system("cls");
+system("color 1a");
+printf("  Este algoritmo calcula o dobro e o quadrado de um numero qualquer n.\n");
+printf("  Informe qual o valor de n usado no calculo: \n");
+fflush(stdin);
+scanf("%f", &numero);
+printf("  O dobro de n vale:%f\n", numero * 2);
+printf("  O quadrado de n vale:%f\n", numero * numero);
+system("pause");
+
+}
