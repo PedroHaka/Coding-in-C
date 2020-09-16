@@ -1,0 +1,25 @@
+/* Bibliotecas */
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+
+/* Variáveis */
+int a, b, c;
+
+/* Corpo do programa */
+void main()
+{
+system("cls");
+system("color 2b");
+printf("  Este algoritmo recebe dois numeros inteiros, uma base e um expoente, faz o calculo da base elevada ao expoente escolhido, e informa o valor resultante\n");
+printf("  Informe o valor da base desejada:\n");
+fflush(stdin);
+scanf("%d", &a);
+printf("  Agora informe o valor do expoente:\n");
+fflush(stdin);
+scanf("%d", &b);
+c = pow(a,b);
+printf("  O resultado vale:%d\n", c);
+system("pause");
+
+}
